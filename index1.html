@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="s_index.css"> <!-- Путь к вашему CSS файлу -->
+    <script src="cart.js" defer></script>
+    <style>
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            width: 75px;
+            height: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Логотип" class="logo">
+    <h1>Zhan Market</h1>
+    <!-- Кнопка Вход -->
+</header>
+
+<nav>
+    <a href="pay1.html">Оплата</a>
+    <a href="#">О нас</a>
+    <a href="contact1.html">Контакты</a>
+    <a href="korzina1.html">Корзина</a>
+</nav>
+
+<div class="container">
+    <!-- Product 1 -->
+    <div class="product-card">
+        <img src="images/apple.jpeg" alt="Яблоко">
+        <h2>Яблоко</h2>
+        <p>Сочное и сладкое яблоко, идеальное для перекуса.</p>
+        <div class="price">350₸</div>
+        <button class="add-to-cart" data-product="Яблоко" data-price="350">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+        <img src="images/banana.jpeg" alt="Банан">
+        <h2>Банан</h2>
+        <p>Сладкий банан, богатый питательными веществами.</p>
+        <div class="price">250₸</div>
+        <button class="add-to-cart" data-product="Банан" data-price="250">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+        <img src="images/orange.jpeg" alt="Апельсин">
+        <h2>Апельсин</h2>
+        <p>Сочный апельсин с высоким содержанием витамина C.</p>
+        <div class="price">400₸</div>
+        <button class="add-to-cart" data-product="Апельсин" data-price="400">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+        <img src="images/pear.jpeg" alt="Груша">
+        <h2>Груша</h2>
+        <p>Нежная груша, прекрасно подходящая для десертов.</p>
+        <div class="price">300₸</div>
+        <button class="add-to-cart" data-product="Груша" data-price="300">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+        <img src="images/kiwi.jpeg" alt="Киви">
+        <h2>Киви</h2>
+        <p>Экзотический киви, богатый витаминами и минералами.</p>
+        <div class="price">500₸</div>
+        <button class="add-to-cart" data-product="Киви" data-price="500">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card">
+        <img src="images/grapes.jpeg" alt="Виноград">
+        <h2>Виноград</h2>
+        <p>Сладкий виноград, идеально подходит для десертов.</p>
+        <div class="price">600₸</div>
+        <button class="add-to-cart" data-product="Виноград" data-price="600">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product-card">
+        <img src="images/peach.jpeg" alt="Персик">
+        <h2>Персик</h2>
+        <p>Ароматный персик, отличный для компотов и пирогов.</p>
+        <div class="price">450₸</div>
+        <button class="add-to-cart" data-product="Персик" data-price="450">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product-card">
+        <img src="images/mango.jpeg" alt="Манго">
+        <h2>Манго</h2>
+        <p>Сладкое манго, придающее экзотический вкус.</p>
+        <div class="price">800₸</div>
+        <button class="add-to-cart" data-product="Манго" data-price="800">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 9 -->
+    <div class="product-card">
+        <img src="images/strawberry.jpeg" alt="Клубника">
+        <h2>Клубника</h2>
+        <p>Сочная клубника, идеальная для десертов и напитков.</p>
+        <div class="price">700₸</div>
+        <button class="add-to-cart" data-product="Клубника" data-price="700">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 10 -->
+    <div class="product-card">
+        <img src="images/raspberry.jpeg" alt="Малина">
+        <h2>Малина</h2>
+        <p>Вкусная малина, отлично подходит для джемов.</p>
+        <div class="price">800₸</div>
+        <button class="add-to-cart" data-product="Малина" data-price="800">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 11 -->
+    <div class="product-card">
+        <img src="images/watermelon.jpeg" alt="Арбуз">
+        <h2>Арбуз</h2>
+        <p>Освежающий арбуз, отличный для летних дней.</p>
+        <div class="price">600₸</div>
+        <button class="add-to-cart" data-product="Арбуз" data-price="600">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 12 -->
+    <div class="product-card">
+        <img src="images/lemon.jpeg" alt="Лимон">
+        <h2>Лимон</h2>
+        <p>Кислый лимон, идеально подходит для напитков и блюд.</p>
+        <div class="price">250₸</div>
+        <button class="add-to-cart" data-product="Лимон" data-price="250">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 13 -->
+    <div class="product-card">
+        <img src="images/pomegranate.jpeg" alt="Гранат">
+        <h2>Гранат</h2>
+        <p>Сочный гранат, богатый витаминами и антиоксидантами.</p>
+        <div class="price">700₸</div>
+        <button class="add-to-cart" data-product="Гранат" data-price="700">Добавить в корзину</button>
+    </div>
+
+    <!-- Добавленные фрукты -->
+    <!-- Product 14 -->
+    <div class="product-card">
+        <img src="images/blackberry.jpeg" alt="Ежевика">
+        <h2>Ежевика</h2>
+        <p>Сладкая ежевика, отличная для десертов.</p>
+        <div class="price">600₸</div>
+        <button class="add-to-cart" data-product="Ежевика" data-price="600">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 15 -->
+    <div class="product-card">
+        <img src="images/cherry.jpeg" alt="Вишня">
+        <h2>Вишня</h2>
+        <p>Сочная вишня, идеально подходит для варенья.</p>
+        <div class="price">450₸</div>
+        <button class="add-to-cart" data-product="Вишня" data-price="450">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 16 -->
+    <div class="product-card">
+        <img src="images/fig.jpeg" alt="Инжир">
+        <h2>Инжир</h2>
+        <p>Сладкий инжир, богатый витаминами.</p>
+        <div class="price">500₸</div>
+        <button class="add-to-cart" data-product="Инжир" data-price="500">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 17 -->
+    <!-- Product 17 -->
+    <div class="product-card">
+        <img src="images/coconut.jpeg" alt="Кокос">
+        <h2>Кокос</h2>
+        <p>Экзотический кокос, отличный для коктейлей.</p>
+        <div class="price">900₸</div>
+        <button class="add-to-cart" data-product="Кокос" data-price="900">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 18 -->
+    <div class="product-card">
+        <img src="images/papaya.jpeg" alt="Папайя">
+        <h2>Папайя</h2>
+        <p>Сладкая папайя, отличная для десертов.</p>
+        <div class="price">650₸</div>
+        <button class="add-to-cart" data-product="Папайя" data-price="650">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 19 -->
+    <div class="product-card">
+        <img src="images/dragonfruit.jpeg" alt="Драконов фрукт">
+        <h2>Драконов фрукт</h2>
+        <p>Экзотический фрукт с уникальным вкусом.</p>
+        <div class="price">1200₸</div>
+        <button class="add-to-cart" data-product="Драконов фрукт" data-price="1200">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 20 -->
+    <div class="product-card">
+        <img src="images/lychee.jpeg" alt="Личи">
+        <h2>Личи</h2>
+        <p>Сладкий личи, идеально подходит для десертов.</p>
+        <div class="price">700₸</div>
+        <button class="add-to-cart" data-product="Личи" data-price="700">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 21 -->
+    <div class="product-card">
+        <img src="images/pear.jpeg" alt="Груша">
+        <h2>Груша</h2>
+        <p>Нежная груша, прекрасно подходящая для десертов.</p>
+        <div class="price">300₸</div>
+        <button class="add-to-cart" data-product="Груша" data-price="300">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 22 -->
+    <div class="product-card">
+        <img src="images/nectarine.jpeg" alt="Нектарин">
+        <h2>Нектарин</h2>
+        <p>Сладкий нектарин, отличный для летнего десерта.</p>
+        <div class="price">500₸</div>
+        <button class="add-to-cart" data-product="Нектарин" data-price="500">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 23 -->
+    <div class="product-card">
+        <img src="images/cranberry.jpeg" alt="Клюква">
+        <h2>Клюква</h2>
+        <p>Кислая клюква, отлично подходит для соусов.</p>
+        <div class="price">400₸</div>
+        <button class="add-to-cart" data-product="Клюква" data-price="400">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 24 -->
+    <div class="product-card">
+        <img src="images/blackcurrant.jpeg" alt="Чёрная смородина">
+        <h2>Чёрная смородина</h2>
+        <p>Кислая чёрная смородина, богатая витаминами.</p>
+        <div class="price">450₸</div>
+        <button class="add-to-cart" data-product="Чёрная смородина" data-price="450">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 25 -->
+    <div class="product-card">
+        <img src="images/whitegrape.jpeg" alt="Белый виноград">
+        <h2>Белый виноград</h2>
+        <p>Сладкий белый виноград, идеальный для закусок.</p>
+        <div class="price">600₸</div>
+        <button class="add-to-cart" data-product="Белый виноград" data-price="600">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 26 -->
+    <div class="product-card">
+        <img src="images/pear.jpeg" alt="Груша">
+        <h2>Груша</h2>
+        <p>Нежная груша, прекрасно подходящая для десертов.</p>
+        <div class="price">300₸</div>
+        <button class="add-to-cart" data-product="Груша" data-price="300">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 27 -->
+    <div class="product-card">
+        <img src="images/greenapple.jpeg" alt="Зелёное яблоко">
+        <h2>Зелёное яблоко</h2>
+        <p>Кислое зелёное яблоко, идеальное для выпечки.</p>
+        <div class="price">350₸</div>
+        <button class="add-to-cart" data-product="Зелёное яблоко" data-price="350">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 28 -->
+    <div class="product-card">
+        <img src="images/clementine.jpeg" alt="Клементина">
+        <h2>Клементина</h2>
+        <p>Сладкая клементина, идеальная для перекуса.</p>
+        <div class="price">400₸</div>
+        <button class="add-to-cart" data-product="Клементина" data-price="400">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 29 -->
+    <div class="product-card">
+        <img src="images/blueberry.jpeg" alt="Голубика">
+        <h2>Голубика</h2>
+        <p>Сочная голубика, отлично подходит для смузи.</p>
+        <div class="price">500₸</div>
+        <button class="add-to-cart" data-product="Голубика" data-price="500">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 30 -->
+    <div class="product-card">
+        <img src="images/mandarin.jpeg" alt="Мандарин">
+        <h2>Мандарин</h2>
+        <p>Сладкий мандарин, отличный для десертов.</p>
+        <div class="price">400₸</div>
+        <button class="add-to-cart" data-product="Мандарин" data-price="400">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 31 -->
+    <div class="product-card">
+        <img src="images/raspberry.jpeg" alt="Малина">
+        <h2>Малина</h2>
+        <p>Сочная малина, идеальная для джемов.</p>
+        <div class="price">800₸</div>
+        <button class="add-to-cart" data-product="Малина" data-price="800">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 32 -->
+    <div class="product-card">
+        <img src="images/soursop.jpeg" alt="Сопод">
+        <h2>Сопод</h2>
+        <p>Сладкий и экзотический сопод, богатый витаминами.</p>
+        <div class="price">900₸</div>
+        <button class="add-to-cart" data-product="Сопод" data-price="900">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 33 -->
+    <div class="product-card">
+        <img src="images/gooseberry.jpeg" alt="Смородина">
+        <h2>Смородина</h2>
+        <p>Кислая смородина, идеально подходит для компотов.</p>
+        <div class="price">350₸</div>
+        <button class="add-to-cart" data-product="Смородина" data-price="350">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 34 -->
+    <div class="product-card">
+        <img src="images/jackfruit.jpeg" alt="Дуриан">
+        <h2>Дуриан</h2>
+        <p>Экзотический дуриан с уникальным вкусом.</p>
+        <div class="price">1200₸</div>
+        <button class="add-to-cart" data-product="Дуриан" data-price="1200">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 35 -->
+    <div class="product-card">
+        <img src="images/olive.jpeg" alt="Олива">
+        <h2>Олива</h2>
+        <p>Соленая олива, отлично подходит для закусок.</p>
+        <div class="price">300₸</div>
+        <button class="add-to-cart" data-product="Олива" data-price="300">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 36 -->
+    <div class="product-card">
+        <img src="images/persimmon.jpeg" alt="Хурма">
+        <h2>Хурма</h2>
+        <p>Сладкая хурма, идеально подходит для десертов.</p>
+        <div class="price">450₸</div>
+        <button class="add-to-cart" data-product="Хурма" data-price="450">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 37 -->
+    <div class="product-card">
+        <img src="images/passionfruit.jpeg" alt="Маракуйя">
+        <h2>Маракуйя</h2>
+        <p>Экзотическая маракуйя с насыщенным вкусом.</p>
+        <div class="price">500₸</div>
+        <button class="add-to-cart" data-product="Маракуйя" data-price="500">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 38 -->
+    <div class="product-card">
+        <img src="images/nectarine.jpeg" alt="Нектарин">
+        <h2>Нектарин</h2>
+        <p>Сладкий нектарин, отличный для летнего десерта.</p>
+        <div class="price">500₸</div>
+        <button class="add-to-cart" data-product="Нектарин" data-price="500">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 39 -->
+    <div class="product-card">
+        <img src="images/soursop.jpeg" alt="Сопод">
+        <h2>Сопод</h2>
+        <p>Сладкий сопод, богатый витаминами.</p>
+        <div class="price">900₸</div>
+        <button class="add-to-cart" data-product="Сопод" data-price="900">Добавить в корзину</button>
+    </div>
+
+    <!-- Product 40 -->
+    <div class="product-card">
+        <img src="images/chilipepper.jpeg" alt="Перец чили">
+        <h2>Перец чили</h2>
+        <p>Острый перец чили, добавляющий остроту блюдам.</p>
+        <div class="price">200₸</div>
+        <button class="add-to-cart" data-product="Перец чили" data-price="200">Добавить в корзину</button>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 My Online Store. Все права защищены.</p>
+</footer>
+
+</body>
+</html>

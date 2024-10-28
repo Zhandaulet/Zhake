@@ -1,0 +1,93 @@
+/* Общее оформление */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* Кнопка "Вход" */
+.login-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: #777;
+}
+
+nav {
+    background-color: #555;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Оформление контейнера для контактов */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h3 {
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Ссылки */
+a {
+    color: #1a73e8; /* Цвет для ссылок */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Нормализация текста */
+p {
+    margin-bottom: 10px;
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}

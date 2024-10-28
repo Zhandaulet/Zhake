@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата</title>
+    <link rel="stylesheet" href="s_pay.css"> <!-- Путь к вашему CSS файлу -->
+</head>
+<body>
+
+<header>
+    <h1>Zhan Market - Оплата</h1>
+    <!-- Кнопка Вход -->
+</header>
+
+<nav>
+    <a href="index1.html">Главная</a>
+    <a href="#">О нас</a>
+    <a href="contact1.html">Контакты</a>
+</nav>
+
+<div class="container">
+    <h2>Форма оплаты</h2>
+    <form>
+        <div class="form-group">
+            <label for="full-name">ФИО:</label>
+            <input type="text" id="full-name" name="full-name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Адрес доставки:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+
+        <h3>Способ оплаты:</h3>
+        <div class="form-group">
+            <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
+            <label for="credit-card">Кредитная карта</label><br>
+            <input type="radio" id="cash" name="payment-method" value="cash" required>
+            <label for="cash">Наличные при доставке</label><br>
+            <input type="radio" id="paypal" name="payment-method" value="paypal" required>
+            <label for="paypal">PayPal</label>
+        </div>
+
+        <button type="submit">Подтвердить платеж</button>
+    </form>
+</div>
+
+<footer>
+    <p>© 2024 My Online Store. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
